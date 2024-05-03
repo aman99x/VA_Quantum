@@ -15,7 +15,7 @@ const Banner2 = () => {
                 </div>
               </div>
               <p data-aos="fade-up" className="leading-8 tracking-wide">
-              VIKRANT KUMAR ( Ph.d ), NIT PATNA
+              ANAND PATEL (B-TECH), NIT DELHI
               </p>
               <p data-aos="fade-up" data-aos-delay="300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,

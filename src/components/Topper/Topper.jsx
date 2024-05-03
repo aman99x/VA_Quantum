@@ -1,11 +1,11 @@
 import React from "react";
-import BannerImg from "../../assets/vikrant.jpeg";
+import BannerImg from "../../assets/Topper.jpeg";
 
 const About = () => {
   return (
-    <div className="py-14 dark:bg-black bg-slate-100 duration-300">
+    <div className="py-14 dark:bg-black bg-transparent duration-300">
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="fade-up">
             <img
               src={BannerImg}
@@ -17,12 +17,11 @@ const About = () => {
             <div className="space-y-5 sm:p-16 pb-6">
               <div data-aos="zoom-in" className="flex items-center gap-4">
                 <div>
-                  <p className="text-primary">VA Quantum Institute</p>
-                  <h1 className="text-2xl sm:text-4xl font-bold">Director</h1>
+                  <h1 className="text-2xl sm:text-4xl font-bold">Bhumika Pawar</h1>
                 </div>
               </div>
-              <p data-aos="fade-up" className="leading-8 tracking-wide">
-              VIKRANT KUMAR ( Ph.d ), NIT PATNA
+              <p data-aos="fade-up" className="font-bold text-blue-800 text-2xl leading-8 tracking-wide">
+                 AIR -214 (JEE MAINS)
               </p>
               <p data-aos="fade-up" data-aos-delay="300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
