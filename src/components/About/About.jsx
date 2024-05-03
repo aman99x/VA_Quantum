@@ -16,9 +16,6 @@ const About = () => {
           <div>
             <div className="space-y-5 sm:p-16 pb-6">
               <div data-aos="zoom-in" className="flex items-center gap-4">
-                <div className="text-primary/70 text-7xl ">
-                  <h1 className="font-bold">01</h1>
-                </div>
                 <div>
                   <p className="text-primary">VA Quantum Institute</p>
                   <h1 className="text-2xl sm:text-4xl font-bold">Director</h1>
