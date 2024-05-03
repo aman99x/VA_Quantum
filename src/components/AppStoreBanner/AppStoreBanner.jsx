@@ -32,11 +32,11 @@ const AppStoreBanner = () => {
             </p>
             <p data-aos="fade-up" className="flex text-center sm:px-20">
               <BiPhoneCall className="text-primary text-2xl animate-pulse group-hover:scale-105 duration-200" />{" "}
-              <p className="font-semibold">+91 9637696091</p>
+              <p className="font-semibold">+91 6201309393</p>
             </p>
             <p data-aos="fade-up" className="flex text-center sm:px-20">
               <BiPhoneCall className="text-primary text-2xl animate-pulse group-hover:scale-105 duration-200" />{" "}
-              <p className="font-semibold">+91 9637696091</p>
+              <p className="font-semibold">+91 8287750390</p>
             </p>        
             </div>
             <p data-aos="fade-up" className="font-bold text-center sm:px-20">
