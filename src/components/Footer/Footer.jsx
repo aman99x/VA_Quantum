@@ -11,7 +11,7 @@ import {
 export const Navlinks = [
   {
     id: 1,
-    name: "SERVICES",
+    name: "ABOUT",
     link: "/#services",
   },
   {
@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="sm:block hidden">Contact us: +91 123456789</div>
+          <div className="sm:block hidden"></div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
               {Navlinks.map(({ id, name, link }) => (

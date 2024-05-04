@@ -32,14 +32,6 @@ const Hero = () => {
             <p className="text-2xl" data-aos="fade-up" data-aos-delay="500">
             ONE OF THE TOP FACULTY FROM KOTA, LATUR, PUNE{" "}
             </p>
-            <button
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-once={"true"}
-              className="primary-btn"
-            >
-              Get Started
-            </button>
           </div>
         </div>
       </div>

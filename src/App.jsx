@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
       <Navbar />
-      <Hero />
+      <Hero />     
       <Topper/>
       <About />
       <Banner2 />   

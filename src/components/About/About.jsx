@@ -17,20 +17,18 @@ const About = () => {
             <div className="space-y-5 sm:p-16 pb-6">
               <div data-aos="zoom-in" className="flex items-center gap-4">
                 <div>
-                  <p className="text-primary">VA Quantum Institute</p>
-                  <h1 className="text-2xl sm:text-4xl font-bold">Director</h1>
+                  
+                  <h1 className="text-2xl sm:text-4xl font-bold">Director</h1><br></br>
+                  <p className="text-primary text-2xl">VA Quantum Institute</p>
                 </div>
               </div>
-              <p data-aos="fade-up" className="leading-8 tracking-wide">
+              <p data-aos="fade-up" className="font-bold text-blue-800 leading-8 tracking-wide text-xl">
               VIKRANT KUMAR ( Ph.d ), NIT PATNA
               </p>
               <p data-aos="fade-up" data-aos-delay="300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 tempora.
               </p>
-              <button data-aos="fade-up" className="button-outline">
-                Get Started
-              </button>
             </div>
           </div>
         </div>
