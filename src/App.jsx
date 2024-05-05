@@ -29,14 +29,14 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
       <Navbar />
-      <Hero />     
+      <Hero /> 
+      <Contact />    
       <Topper/>
       <About />
       <Banner2 />   
       <Services />    
       <Testimonial />
       <AppStoreBanner />
-      <Contact />
       <Footer />
     </div>
   );

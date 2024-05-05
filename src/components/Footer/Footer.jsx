@@ -12,17 +12,17 @@ export const Navlinks = [
   {
     id: 1,
     name: "ABOUT",
-    link: "/#services",
+    link: "/#about",
   },
   {
     id: 2,
     name: "COURSES",
-    link: "/#about",
+    link: "/#services",
   },
   {
     id: 3,
     name: "CONTACT",
-    link: "/#join",
+    link: "/#appbanner",
   },
 ];
 const Footer = () => {

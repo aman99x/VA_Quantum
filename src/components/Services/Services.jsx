@@ -1,7 +1,4 @@
 import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
-import { SlNote } from "react-icons/sl";
 
 const skillsData = [
   {
@@ -51,7 +48,7 @@ const skillsData = [
 const Services = () => {
   return (
     <>
-      <span id="about"></span>
+      <span id="services"></span>
       <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container">
           <div className="pb-12">
@@ -70,17 +67,16 @@ const Services = () => {
                 data-aos-delay={skill.aosDelay}
                 className="card text-center space-y-3 sm:space-y-6 p-4 sm:py-16 bg-gray-200 dark:bg-dark  hover:bg-primary/20 dark:hover:bg-primary/50 duration-300 text-black dark:text-white rounded-lg group "
               >
-                {/* <div className="grid place-items-center">{skill.icon}</div> */}
                 <h1 className="text-3xl font-bold">{skill.name}</h1>
                 {skill.description.map((desc) => (
                   <p>{desc}</p>
                 ))}
-                <a
+                {/* <a
                   href={skill.link}
                   className="primary-btn mt-4 group-hover:scale-105  duration-200"
                 >
                   Join Now
-                </a>
+                </a> */}
               </div>
             ))}
           </div>

@@ -3,23 +3,22 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Logo from "../../assets/VA.jpeg";
 import DarkMode from "./DarkMode";
-// import { BiPhoneCall } from "react-icons/bi";
 
 export const Navlinks = [
   {
     id: 1,
     name: "ABOUT",
-    link: "/#services",
+    link: "/#about",
   },
   {
     id: 2,
     name: "COURSES",
-    link: "/#about",
+    link: "/#services",
   },
   {
     id: 3,
     name: "CONTACT",
-    link: "/#join",
+    link: "/#appbanner",
   },
 ];
 const Navbar = () => {
@@ -36,7 +35,6 @@ const Navbar = () => {
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="text-2xl sm:flex items-center gap-3 hidden font-semibold text-gray-500 dark:text-gray-400 group">
-            {/* <BiPhoneCall className="text-primary text-2xl animate-pulse group-hover:scale-105 duration-200" />{" "} */}
             VA Quantum Institute
           </div>
           <div>

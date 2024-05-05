@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="grid grid-cols-3 sm:grid-cols-3 gap-6 bg-gray-100 dark:bg-dark py-8 px-6">
             <div className="col-span-2 space-y-3">
               <h1 className="text-3xl sm:text-4xl font-bold text-black/80 dark:text-white">
-                <span className="text-primary"> “The earlier you start working on something, the earlier you will see results.”.</span>
+                <span className="text-primary"> “New Batch Start from 9 May 2024.”.</span>
               </h1>
             </div>
           </div>

@@ -15,6 +15,7 @@ const Topper = () => {
                 </div>
               </div>
               <p data-aos="fade-up" className="font-bold text-blue-800 text-2xl leading-8 tracking-wide">
+                JEE - 99.59%tiles<br></br>
               AIR -214 (JEE MAINS)
               </p>
               <p data-aos="fade-up" data-aos-delay="300" className="text-orange-400">
