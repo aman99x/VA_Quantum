@@ -27,7 +27,7 @@ const About = () => {
               <p data-aos="fade-up" className="font-bold text-blue-800 leading-8 tracking-wide text-xl">
               VIKRANT KUMAR ( Ph.d ), NIT PATNA
               </p>
-              <p className= " text-black text-xl" data-aos="fade-up" data-aos-delay="300">             
+              <p className= " text-green-600 text-xl" data-aos="fade-up" data-aos-delay="300">             
                 (8 years of teaching experience.)
               </p>
             </div>
