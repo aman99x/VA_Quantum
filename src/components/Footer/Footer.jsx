@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../../assets/VA.jpeg";
+import { IoMdMail } from "react-icons/io";
 import {
-  FaFacebook,
   FaInstagram,
-  FaLinkedin,
-  FaLocationArrow,
-  FaMobileAlt,
 } from "react-icons/fa";
 
 export const Navlinks = [
@@ -38,14 +35,11 @@ const Footer = () => {
             <div>
               {/* Social Handle */}
               <div className="flex items-center gap-3">
-                <a href="#">
+                <a href="https://www.instagram.com/vaquantuminstitite">
                   <FaInstagram className="text-3xl hover:text-primary duration-300" />
                 </a>
-                <a href="#">
-                  <FaFacebook className="text-3xl hover:text-primary duration-300" />
-                </a>
-                <a href="#">
-                  <FaLinkedin className="text-3xl hover:text-primary duration-300" />
+                <a href="https://vaquantuminstitute@gmail.com">
+                  <IoMdMail className="text-3xl hover:text-primary duration-300" />
                 </a>
               </div>
             </div>

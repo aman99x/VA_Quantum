@@ -17,9 +17,8 @@ const Banner2 = () => {
               <p data-aos="fade-up" className="font-bold text-blue-800 leading-8 tracking-wide text-xl">
               ANAND PATEL (B-TECH), NIT DELHI
               </p>
-              <p data-aos="fade-up" data-aos-delay="300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                tempora.
+              <p className= " text-black text-xl" data-aos="fade-up" data-aos-delay="300">
+               ( 6 years of teaching experience.)
               </p>
             </div>
           </div>
