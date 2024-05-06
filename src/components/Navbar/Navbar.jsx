@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Logo from "../../assets/VA.jpeg";
@@ -23,10 +23,23 @@ export const Navlinks = [
 ];
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setShowMenu(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
     <div
       className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300
@@ -76,7 +89,14 @@ const Navbar = () => {
                 className="cursor-pointer transition-all"
                 size={30}
               />
-            )}
+            )
+            }
+            {/* Render the menu */}
+      {showMenu && (
+        <div ref={menuRef}>
+          {/* Your menu content here */}
+        </div>
+      )}
           </div>
         </div>
       </div>
