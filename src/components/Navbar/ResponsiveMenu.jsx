@@ -1,6 +1,5 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-
 import { Navlinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
@@ -16,7 +15,6 @@ const ResponsiveMenu = ({ showMenu }) => {
           <FaUserCircle size={50} />
           <div>
             <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
           </div>
         </div>
         <nav className="mt-12">

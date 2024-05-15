@@ -3,6 +3,7 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Logo from "../../assets/VA.jpeg";
 import DarkMode from "./DarkMode";
+import Register from "../Register/Register";
 
 export const Navlinks = [
   {
@@ -20,9 +21,15 @@ export const Navlinks = [
     name: "CONTACT",
     link: "/#appbanner",
   },
+  {
+    id: 4,
+    name: "REGISTER",
+    action: "register",
+  },
 ];
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -32,6 +39,13 @@ const Navbar = () => {
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       setShowMenu(false);
+    }
+  };
+  const handleLinkClick = (link, action) => {
+    if (action === "register") {
+      setShowRegister(true);
+    } else {
+      window.location.href = link;
     }
   };
   useEffect(() => {
@@ -59,14 +73,20 @@ const Navbar = () => {
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
-              {Navlinks.map(({ id, name, link }) => (
+              {Navlinks.map(({ id, name, link, action }) => (
                 <li key={id} className="py-4">
-                  <a
+                  {/* <a
                     href={link}
                     className="inline-block text-lg font-semibold  hover:text-primary duration-300  "
                   >
                     {name}
-                  </a>
+                  </a> */}
+                  <button
+                    onClick={() => handleLinkClick(link, action)}
+                    className="inline-block text-lg font-semibold hover:text-primary duration-300"
+                  >
+                    {name}
+                  </button>
                 </li>
               ))}
               {/* DarkMode feature implement */}
@@ -101,6 +121,19 @@ const Navbar = () => {
         </div>
       </div>
       <ResponsiveMenu showMenu={showMenu} />
+      {showRegister && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-4 rounded-lg">
+            <Register />
+            <button
+              onClick={() => setShowRegister(false)}
+              className="mt-4 px-4 py-2 bg-red-500 text-white rounded"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
