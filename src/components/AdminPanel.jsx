@@ -42,32 +42,37 @@ const AdminPanel = () => {
 
     if (!isLoggedIn) {
         return (
-            <div className="p-6 mr-9 text-black">
-                <h1 className="text-white text-2xl font-bold mb-4">Admin Login</h1>
-                <form className='text-white justify-center selection:' onSubmit={handleLogin}>
-                    <div>
-                        <label>Email:</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            className="border p-2 mb-4"
-                        />
-                    </div>
-                    <div>
-                        <label>Password:</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                            className="border p-2 mb-4"
-                        />
-                    </div>
-                    <button type="submit" className="bg-blue-500 text-white p-2">Login</button>
-                </form>
+            <div className="flex justify-center items-center min-h-screen bg-gray-800">
+    <div className="bg-gray-900 p-8 rounded-lg shadow-lg w-full max-w-sm">
+        <h1 className="text-white text-3xl font-bold mb-6 text-center">Admin Login</h1>
+        <form className="text-white" onSubmit={handleLogin}>
+            <div className="mb-4">
+                <label className="block text-gray-300 mb-2">Email:</label>
+                <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
             </div>
+            <div className="mb-6">
+                <label className="block text-gray-300 mb-2">Password:</label>
+                <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                    className="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+            </div>
+            <button type="submit" className="w-full py-3 rounded bg-blue-500 hover:bg-blue-600 text-white font-semibold">
+                Login
+            </button>
+        </form>
+    </div>
+</div>
+
         );
     }
 
