@@ -19,7 +19,7 @@ const AdminPanel = () => {
     }, []);
 
     return (
-        <div className="p-4">
+        <div className="p-4 text-black">
             <h1 className="text-2xl font-bold mb-4">Registered Users</h1>
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white border">
