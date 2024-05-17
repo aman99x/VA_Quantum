@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // Component imports
 import Navbar from "./components/Navbar/Navbar";
@@ -14,8 +17,6 @@ import Footer from "./components/Footer/Footer";
 import Banner2 from "./components/Banner2/Banner2";
 import Topper from "./components/Topper/Topper";
 import AdminPanel from "./components/AdminPanel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   useEffect(() => {
@@ -28,29 +29,31 @@ const App = () => {
     AOS.refresh();
   }, []);
 
-  const isAdminPanel = window.location.pathname === "/admin";
-
   return (
-    <>
+    <Router>
       <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-        {isAdminPanel ? (
-          <AdminPanel />
-        ) : (
-          <>
-            <Navbar />
-            <Hero />
-            <Contact />
-            <Topper />
-            <About />
-            <Banner2 />
-            <Services />
-            <Testimonial />
-            <AppStoreBanner />
-            <Footer />
-          </>
-        )}
+        <Routes>
+          <Route path="/admin" element={<AdminPanel />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Hero />
+                <Contact />
+                <Topper />
+                <About />
+                <Banner2 />
+                <Services />
+                <Testimonial />
+                <AppStoreBanner />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 };
 
